@@ -33,22 +33,9 @@ Simulating airflow in the lungs helps better understand respiratory mechanics, g
 We solve the steady-state incompressible flow equations modeling airflow:
 
 ### 🔹 Stokes Equations (Low Reynolds number):
-\[
--\nabla p + \mu \nabla^2 \vec{u} = 0 \\
-\nabla \cdot \vec{u} = 0
-\]
+
 
 ### 🔹 Navier-Stokes Equations (General case):
-\[
-\rho (\vec{u} \cdot \nabla)\vec{u} = -\nabla p + \mu \nabla^2 \vec{u} \\
-\nabla \cdot \vec{u} = 0
-\]
-
-Where:
-- \( \vec{u} = (u_x, u_y) \): airflow velocity vector in lung airways
-- \( p \): pressure
-- \( \mu \): dynamic viscosity of air
-- \( \rho \): air density
 
 ---
 
@@ -64,14 +51,3 @@ Where:
 
 ---
 
-## 🧑‍💻 Project Structure
-
-```plaintext
-📁 project_root/
-│
-├── stokes_solver_no_deformation.py
-├── navier_stokes_solver_with_deformation.py
-├── streamline_plotter.py
-├── poiseuille_law_reference.py
-├── velocity_vector_visualization.py
-└── README.md
